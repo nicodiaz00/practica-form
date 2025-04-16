@@ -1,0 +1,21 @@
+body{
+    background-color: antiquewhite;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contendor-main{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    height: 60%;
+    width: 30%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    font-size: 2em;
+    color: black
+    
+}

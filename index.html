@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="contenedor-form">
+        <div>
+            <h3>Registro</h3>
+        </div>
+        <div class="formulario">
+            <form action="registro.html">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+                <label for="apellido">Apellido</label>
+                <input type="text" name ="apellido" id="apellido">
+                <label for="dni">Dni</label>
+                <input type="number" name="dni" id="dni">
+                <label for="fecha">Fecha de Nacimiento</label>
+                <input type="date" id="fecha" name="fecha">
+                <div class="">
+                    <div class="titulo">
+                        <p>Genero</p>
+                    </div>
+                    <div class="contenedor-genero">
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" name="genero" value="Masculino" id="masculino"> 
+                        <label for="femenino">Femenino</label>
+                        <input type="radio" name="genero" value="Femenino"id=femenino>
+                        
+                    </div>
+                    
+                </div>
+                       
+                <div class="contendor-pais">
+                 <div class="titulo">
+                    <p>Nacionalidad</p>
+                 </div> 
+                 <div class="c-select">
+                    <select id="pais" name="pais">
+                        <option value="Argentina">Argentina</option>
+                        <option value="Mexico">México</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Uruguay">Uruguay</option>
+                    </select>
+                 </div>  
+                </div>
+                
+                <div class="registro">
+                    <input type="submit" value="Registrame" class="btn-registro">
+                </div>
+                
+
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>
