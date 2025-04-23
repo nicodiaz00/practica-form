@@ -3,391 +3,219 @@ html {
   }
 
 body{
-    background-color: white;
+    background-color: lightblue;
     margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     
 }
 .main{
-    display: flex;
-    
-    margin: 0%;
-
-}
-.contendor-main{
-    
-    height:100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    
-    justify-content: center;
-    align-items: center;
-    
-}
-.header{
-    height: 80px;
-    width: 100%;
+    height: 90%;
     background-color: whitesmoke;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 30%;
     
-}
-.btn {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    border-radius: 15px;
-    margin: 1%;
-    box-shadow: 0 0 4px rgba(47, 49, 47, 0.6);
-    
-  }
-.login{
-    width: 50%;
-    height: 100vh;
-    background-color: lightseagreen;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Aquí va la sombra */
     border-radius: 20px;
-    margin-bottom: 1%;
-    margin-top: 1%;
-    
-    
 
+    flex-direction: column;
 }
-
-.titulo-login{
-    height: 10%;
-    font-size: 1.4em;
-    margin-bottom: 2%;
-    
-}
-.titulo-login h1,h3{
-    margin-left: 3%;
-    font-family: "Barriecito", system-ui;
-}
-.titulo-login > h1{
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
-.titulo-login > h3{
-    margin-top: 0%;
-}
-
-.input-login{
+.registro{
     display: flex;
     flex-direction: column;
     
-    font-size: 1.9em;
-           
 }
-.input-login > label {
+.titulo{
+    width: 80%;
+    
+    height: 100%;
+    margin-left: 5%;
+}
+.titulo > h2 {
+    margin-left: 2%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.primer-grupo{
+    display: flex;
+    flex-direction: column;
+}
+.primer-grupo > label, .segundo-grupo > label {
+    margin-left: 4%;
     margin-bottom: 2%;
     margin-top: 2%;
-    margin-left: 3%;
-    font-family: "Atma", system-ui;   
-}
-.input-login > input{
-    width: 70%;
-    height: 40px;
-    border-radius: 7px;
-    margin-left: 4%;
-    margin-bottom: 3%;
+    font-size: 1.2em;
+    font-family: sans-serif;
     
+}
+.primer-grupo > input {
+    width: 40%;
+    height: 25px;
+    margin-left: 7%;
+    border-radius: 5px;
     border: none;
-    transition: box-shadow 0.3s ease;
-}
-.input-login > input:focus {
-    box-shadow: 0 0 8px rgba(47, 49, 47, 0.6);
-    border-color: black
-  }
-
-.contedor-checkbox > label{
-    margin-left: 4%;
-    margin-right: 9%;
-    font-size: 1.3em;
-    font-family: "Atma", system-ui;
-}
-.contedor-checkbox > button {
-    background-color: whitesmoke;
-    height: 40px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-    border: none;
-    transition: background-color 0.9s ease, color 0.5s ease;
-}
-.contedor-checkbox > button:hover {
-    background-color: green;
-    color: white;   
-}
-.contenedor-btn-login{
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); /* Aquí va la sombra */
     
-    height: 5%;
-    width: 100%;
+}
+.generos{
     display: flex;
+    flex-direction: row;
+}
+.generos > label {
+    margin-left: 8%;
+    margin-top: 2%;
+    font-family: sans-serif;
+    font-size: 1.1em;
+}
+.segundo-grupo{
+    margin-top: 2%;
+}
+.tercer-grupo{
     margin-top: 3%;
-    align-items: center;
 }
-.contenedor-btn-login > button{
-    height: 90%;
-    margin-left: 4%;
-    width: 20%;
-    border-radius: 15px;
-    border: none;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.6s ease, box-shadow 0.7s ease;
-}
-.contenedor-btn-login > button:hover{
-    background-color: #45a049; /* verde más oscuro */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-
-}
-.login-rrss{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 20%;
-    
-}
-.titulo-rrss{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Atma", system-ui;
-    font-size: 1.9em;
-    height: 30%;
-}
-.contenedor-buttons{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.btn-google ,.btn-facebook{
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    width: 20%;
-    justify-content: space-around;
-    border: none;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-    transition: box-shadow 0.3s ease;
-    margin: 1%;
-    
-}
-.btn-google:hover , .btn-facebook:hover{
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-
-/*contenedor registro*/
-.registro{
-    width: 50%;
-    height: 100vh;
-    background-color:lightgray;
-    border-radius: 20px;
-    margin-bottom: 1%;
-}
-.titulo-registro{
-    height: 10%;
-    font-size: 1.4em;
-    margin-bottom: 2%;
-    
-    
-    
-}
-.titulo-registro h1,h3{
-    font-family: "Barriecito", system-ui;
-    margin-left: 3%;
-}
-.titulo-registro > h1{
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
-.titulo-registro > h3 {
-    margin-top: 0%;
-}
-
-.contenedor-formulario{
-    display: flex;
-    flex-direction: column;
-    
-    margin-top: 4%;
-    
-}
-.contenedor-formulario > form{
-    display: flex;
-    flex-direction: column;
-}
-.input-grupo-uno > label {
-    margin-bottom: 0%;
-    margin-top: 1%;
-    margin-left: 3%;
-    font-family: "Atma", system-ui;
-    font-size: 1.9em;   
-}
-.input-grupo-uno{
-    flex-direction: column;
-    display: flex;
-}
-.input-grupo-uno > input {
-    width: 70%;
-    height: 40px;
-    border-radius: 7px;
-    margin-left: 4%;
-    margin-bottom: 3%;
-    
-    border: none;
-    transition: box-shadow 0.3s ease;
-}
-.input-grupo-dos{
-    display: flex;
-    flex-direction: row;
-    align-items: center;   
-}
-.input-grupo-dos > p{
-    margin-left: 4%;
-    font-family: "Atma", system-ui;
-    font-size: 1.4em; 
-
-}
-.input-grupo-dos > label{
+.tercer-grupo > label{
     margin-left: 5%;
-    font-family: "Atma", system-ui;
-    font-size: 1.4em; 
+    font-family: sans-serif;
+    font-size: 1.1em;
 }
-.input-grupo-tres{
+.tercer-grupo > select {
+    margin-left: 1%;
+    border-radius: 10px;
+    height: 25px;
+}
+.cuarto-grupo{
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
 }
-.input-grupo-tres > p{
-    margin-left: 4%;
-    font-family: "Atma", system-ui;
-    font-size: 1.4em; 
-}
-.input-grupo-tres > select {
-    margin-left: 2%;
+.cuarto-grupo > button{
+    width: 20%;
     height: 30px;
     border: none;
-    border-radius: 10px;
-    width: 15%;
-    text-align: center;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); /* Aquí va la sombra */
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+
+
 }
-.contenedor-submit{
-    display: flex;
-    align-items: center;
-    display: flex;
-    height: 50px;
+.cuarto-grupo > button:hover{
+    background-color: lightseagreen;
+    color: white;
     
 }
-.btn-registro{
+.user-login{
+    
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    
+}
+.login{
+    display: flex;
+    flex-direction: column;
+}
+.login > label{
     margin-left: 4%;
-    width: 15%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    font-size: 1.1em;
+    font-family: sans-serif;
+}
+.login > input{
+    width: 40%;
+    height: 25px;
+    margin-left: 7%;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); /* Aquí va la sombra */
+}
+.btn-login{
+    margin-top: 4%;
+    display: flex;
+    justify-content: center
+}
+.btn-login > button{
+    width: 20%;
+    height: 35px;
     border-radius: 15px;
     border: none;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.6s ease, box-shadow 0.7s ease;
-    height: 30px;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); /* Aquí va la sombra */
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+
 }
-.btn-registro:hover{
-    background-color: #45a049; /* verde más oscuro */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
+.btn-login > button:hover{
+    background-color: lightseagreen;
+    color: white;
     
+}
+input:focus {
+    outline: none; /* Quita el borde azul por defecto */
+    border: 2px solid lightblue; /* Borde verde */
+    box-shadow: 0 0 2px lightgray; /* Sombra suave */
 
+}
+@media (max-width: 768px){
 
-
-
-
-@media (max-width: 1000px) {
-    .contendor-main {
-        flex-direction: column; /* apilados verticalmente */
+    .main{
+        width: 90%;
+       
     }
-    .header{
+    .registro{
         display: flex;
-        height: 2%;
-
+        flex-direction: column;
+        flex-wrap: wrap;
     }
-    .btn {
-        
-        background-color: #4CAF50;
-        color: white;
-        text-decoration: none;
-        border-radius: 15px;
-        margin: 1%;
-        box-shadow: 0 0 4px rgba(47, 49, 47, 0.6);
-        
-      }
-      .login{
-        width: 95%;
-        height: 90vh;
-        margin-top: 3%;
-        margin-bottom: 5%;
-      }
-      .titulo-login{
+    .primer-grupo > label{
         font-size: 0.9em;
-        margin-left: 2%;
-        margin-top: 3%;
-      }
-      .input-login{
-        display: flex;
-        align-items: center;
-      }
-      .input-login > label{
-        font-size: 0.7em; 
-      }
-      .contedor-checkbox{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .contedor-checkbox > label  {
-        font-size: 1em;
-      }
-      .contenedor-btn-login{
-        width: 90%;
-        height: 10%;
-        
-      }
-      .contenedor-btn-login > button {
-        margin-left: 18%;
-        width: 40%;
-        height: 50%;
-      }
-     
-      
-      .titulo-rrss > p{
-        font-size: 0.8em;
-      }
-      .btn-google , .btn-facebook{
-        width: 40%;
-      }
-
-      /*registro*/
-
-      .registro{
-        width: 90%;
         margin-top: 1%;
         margin-bottom: 1%;
-        height: 100vh;
-      }
-      .titulo-registro >h1{
+    }
+    .primer-grupo > input{
+        height: 20px;
+    }
+    .titulo > h2{
         font-size: 0.9em;
-        margin-top: 3%;
-        margin-left: 3%;
-        margin-bottom: 3%;
-      }
-      .titulo-registro >h3{
+    }
+    .segundo-grupo > label, .generos > label{
+        font-size: 0.8em;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    .tercer-grupo > label {
         font-size: 0.9em;
-      }
-      .input-grupo-uno > label{
-        font-size: 1.2em;
-      }
-      .input-grupo-tres > select{
-        width: 50%;
-      }
-      .btn-registro{
-        width: 50%;
-      }
+    }
+    .tercer-grupo > select {
+        width: 30%;
+        text-align: center;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Aquí va la sombra */
+    }
+    .cuarto-grupo{
+        margin-top: 5%;
+        margin-bottom: 5%;
 
+    }
+    .cuarto-grupo > button{
+        width: 30%;
+    }
+    .user-login{
+
+        margin-top: 5%;
+    }
+    .titulo >  h2{
+        font-size: 0.9em;
+    }
+    .login > label {
+        font-size: 0.9em;
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+    .btn-login > button{
+        width: 30%;
+    }
 }
