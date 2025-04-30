@@ -1,0 +1,23 @@
+.div-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100vh;
+}
+
+.contenedor-main{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 30vh;
+    background-color: darkgrey;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 1.3em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
